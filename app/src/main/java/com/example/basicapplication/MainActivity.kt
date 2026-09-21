@@ -1,6 +1,7 @@
 package com.example.basicapplication
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.enableEdgeToEdge
@@ -46,6 +47,9 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
         }
+
+        Log.d(TAG, "onCreate: MainActivity")
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
